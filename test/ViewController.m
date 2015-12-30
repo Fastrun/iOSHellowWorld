@@ -9,6 +9,8 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+- (IBAction)button:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextField *text;
 
 @end
 
@@ -24,4 +26,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)button:(id)sender {
+
+    _text.text=@"Hello world!";
+}
 @end
